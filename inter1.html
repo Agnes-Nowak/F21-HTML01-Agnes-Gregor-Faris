@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+    <!-- Intermediate Exercise | Contact form
+Create an HTML page that can be used as a contact form for a Web page. Create a form with text input fields, radio buttons and a submitter button. Try to make it as realistic and useful as possible.
+ -->
+ <form action="">
+        <label for="firstName">Please enter your first name</label><br>
+        <input type="text" name="firstName" placeholder="First Name" required><br><br>
+        <label for="lastName">Please enter your last name</label><br>
+        <input type="text" name="lastName" placeholder="Last Name" required><br><br>
+        <p>Gender:</p>
+        
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label><br>
+        
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label><br>
+        
+        <input type="radio" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br> 
+        <label for="nationality">Nationality</label>
+        <select name="nationality" id="">
+            <option value="Swedish">Swedish</option>
+            <option value="Polish">Polish</option>
+            <option value="German">German</option>
+            <option value="British">British</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="other">other</option>
+        </select><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea><br><br>
+        <label for="email">Your email address</label><br>
+        <input type="email" placeholder="EMAIL" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+ 
+</body>
+</html>
