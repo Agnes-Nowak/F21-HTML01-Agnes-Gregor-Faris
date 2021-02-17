@@ -1,0 +1,76 @@
+<!-- Advanced Exercise | Nested Elements
+Create a planner for activities to do in Vienna over the weekend. 
+
+You will need 3 rows and 3 columns. The first row will contain the headings Day, Morning and Afternoon.
+
+The second row contains all the information for Saturday. Place descriptive lists within each of the two empty table cells(the cells for the morning and afternoon).
+
+
+For Sunday, use ordered lists to rank your activities. Within the ordered lists you should nest unordered lists with more information on each activity you plan. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Elements</title>
+</head>
+<body>
+    <table><caption>Weekend activities</caption>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Saturday</td>
+                <td>
+                    <dl>
+                        <dt>A walk</dt>
+                        <dd>With my dog</dd>
+                    </dl>
+                </td>
+                <td>
+                    <dl>
+                        <dt>Chilling out with a book</dt>
+                        <dd>If my dog allows</dd>
+                    </dl>
+                </td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>
+                    <ol>
+                        <li>Sleeping
+                            <ul>
+                                <li>extremely important</li>
+                                <li>makes me more alert</li>
+                                <li>never have enough</li>
+                            </ul>
+                        </li> 
+                    </ol>
+                    <ol>
+                        <li>Reading</li>
+                        <ul>
+                            <li>books</li>
+                            <li>articles</li>
+                        </ul>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Playing with my dog</li>
+                            <ul>
+                                <li>toys</li>
+                                <li>treats</li>
+                            </ul>
+                    </ol>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+</body>
+</html>
